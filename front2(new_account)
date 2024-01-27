@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Sign up to Studdi Buddi</title>
+    </header>
+    <body>
+        <h1>Sign Up</h1>
+        <p>please fill the form given below</p>
+        <form action="/newaccount">
+            <input type="Text" placeholder="username" name="username" required><br>
+            <input type="password" placeholder="password" name="new password" required><br>
+            <input type="checkbox">I am not a robot<br>
+            <button type="submit"> Create Account</button>
+        </form>
+    <body>
+<html>
