@@ -1,0 +1,21 @@
+body{
+   background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L25zMTkzNDYtaW1hZ2Uta3d2eWIzYnQuanBn.jpg");
+
+}
+
+.Header{
+    text-align: center;
+}
+
+.form{
+    text-align: center;
+}
+
+button{
+    padding: 0.9%;
+    background-color: aqua;
+    border-color: aqua;
+    size: 0.9%;
+    width: 10%;
+    
+}
