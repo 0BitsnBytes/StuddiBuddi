@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Queries</title>
+    </head>
+    <body>
+        <h2>Queries</h1>
+        <p>Please submit your queries and your email.<br> We will send you an email as soon as possible</p>
+        <form action="/proccess">
+            <input type="text" placeholder="Query" name="Queries"><br>
+            <input type="email" placeholder="email" name="email"  valid required><br>
+            <button type="submit">submit</button>
+        </form>
+    </body>
+</html>
