@@ -1,15 +1,158 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Studdi Budi</title>
-    </head>
-    <body>
-        <h1>Welcome to Studdi Budi!</h1>
-        <form action="/process">
-            <input type="text" placeholder="Username" name="Username" required><br>
-            <input type="password" placeholder="password" name="password" required><br>
-            <button type="submit" name="submit">Submit</button><br>
-            <a href="random url">New to Studdi Buddi? click here to create acount</a>
-        </form>
+
+<!-- saved from url=(0058)file:///Users/jas/Documents/GitHub/StuddiBuddi/front1.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="/Users/jas/Documents/GitHub/StuddiBuddi/login.css" rel="stylesheet" type="text/css">
+    <title>StuddiBuddi</title>
+
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url("/Users/jas/Downloads/img.jpg") no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .wrapper {
+            background-color: transparent;
+            border: 2px solid rgba(255, 255, 255, .3);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 420px;
+            color: white;
+            border-radius: 10px;
+            padding: 60px 100px;
+            text-align: center; 
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .wrapper h1 {
+            font-size: 40px;
+            text-align: center;
+            white-space: none;
+        }
+
+        .wrapper .input-box {
+            position: relative;
+            font-size: 50px;
+            width: 100%;
+            height: 50px;
+            margin: 30px 0;
+        }
+
+        .input-box input {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            outline: none;
+            border: 2px solid rgba(255 ,255 ,255 ,0.2);
+            border-radius: 40px;
+            font-size: 16px;
+            color: white;
+            padding: 20px 45px 20px 20px;
+        }
+
+        .input-box input::placeholder {
+            color: rgba(235,235,235);
+        }
+
+        .input-box i {
+            position: absolute;
+            right: 20px;
+            cursor: pointer;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+        }
+
+        .wrapper .btn {
+            width: 100%;
+            height: 45px;
+            background: white;
+            border: 2px solid rgba(255 ,255 ,255 ,0.2);
+            outline: none;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            font-size: 20px;
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            position: fixed;
+            top: 50px;
+            right: 45px;
+            width: 200px;
+            height: 45px;
+            background: transparent;
+            backdrop-filter: blur(5px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            outline: none;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            font-size: 20px;
+            color: white;
+            font-weight: 600;
+            align-items: center;
+        }
+
+        .wrapper .newAccount {
+            color: #9f79d1;
+        }
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+      <form method="post" action="file:///process">
+        <h1>Welcome to StuddiBuddi</h1>
+
+        <div class="input-box">
+          <input type="text" placeholder="Username" name="Username" required="">
+          <i class="bx bxs-user"></i>
+        </div>
+
+        <div class="input-box">
+          <input type="password" placeholder="Password" name="Password" id="password-field" required="">
+          <i class="bx bxs-lock-alt" id="togglePassword"></i>
+        </div>
+
+        <button type="submit" class="btn">Login</button>
+        
+        <a href="file:///Users/jas/Documents/GitHub/StuddiBuddi/random%20url" class="newAccount">New to StuddiBuddi? click here to create acount</a>
+    
+    </form>
+    </div>
+    
+    <script>
+      const togglePassword = document.getElementById('togglePassword');
+      togglePassword.addEventListener('click', function(e) {
+        // toggle the type attribute of the input field
+        const passwordField = document.getElementById('password-field');
+        if (passwordField.type === "password") {
+          passwordField.type = "text";
+        } else {
+          passwordField.type = "password";
+        }
+        // toggle the eye icon
+        this.classList.toggle('bx-hide');
+      });
+    </script>
+  
+
     </body>
 </html>
