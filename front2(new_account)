@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Sign up to Studdi Buddi</title>
+        <title>Home|Studdi Buddi</title>
+        <link rel="stylesheet" href="front2.css">
     </head>
     <body>
-        <h1>Sign Up</h1>
-        <p>please fill the form given below</p>
-        <form action="/newaccount">
-            <input type="Text" placeholder="username" name="username" required><br>
-            <input type="password" placeholder="password" name="new password" required><br>
-            <input type="checkbox">I am not a robot<br>
-            <button type="submit"> Create Account</button>
-        </form>
-    <body>
-<html>
+        <div class="form">
+        <div class="Header"><h1>Studdi Buddi</h1></div>
+        <div class="Button1"><a href="Random"><button type="button">Queries</button></a><br><br><br></div>
+        <div class="Button2"><a href="Random"><button type="button">Go!</button></a></div>
+        </div>
+    </body>
+</html>
