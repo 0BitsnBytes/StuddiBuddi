@@ -1,0 +1,2 @@
+# StuddiBuddi
+ ONLY FOR MOODY ,   SAMARTHY AND VEDY
