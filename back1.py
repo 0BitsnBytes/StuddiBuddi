@@ -1,10 +1,5 @@
 print("   Welcome to Python World!!!   ")
-print('_'*30)
 
-
-#print the rules.
-print()
-print()
 
 data = {}
  
