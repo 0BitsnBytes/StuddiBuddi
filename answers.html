@@ -13,9 +13,12 @@
                 justify-content: center;
                 align-items: center;
                 min-height: 100vh;
-                background: url("https://t3.ftcdn.net/jpg/05/80/73/30/360_F_580733023_FCmat80apCiwwFKe0y2JipZODKKy7luY.jpg  ") no-repeat;
+                background: url("https://i.pinimg.com/736x/e1/71/1f/e1711fc6512f39eef8fb1b13178512b6.jpg") no-repeat;
+                background-size: cover;
                 background-size: cover;
                 background-position: center;
+                color: white; 
+                text-align:center
             }
 
             .wrapper {
@@ -32,6 +35,7 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+                padding-right:150px
             }
 
             .wrapper h1 {
@@ -46,10 +50,6 @@
                 width: 100%;
                 height: 50px;
                 margin: 30px 0;
-            }
-
-            .input-box input::placeholder {
-                color: rgba(235,235,235,0.75);
             }
 
             .input-box input {
@@ -93,11 +93,6 @@
             }
 
             .button {
-                position: fixed;
-                top: 50px;
-                right: 45px;
-                width: 200px;
-                height: 45px;
                 background: transparent;
                 backdrop-filter: blur(5px);
                 border: 2px solid rgba(255, 255, 255, 0.2);
@@ -106,40 +101,45 @@
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
                 cursor: pointer;
                 font-size: 20px;
-                color: white;
+                color: black;
                 font-weight: 600;
                 align-items: center;
+                background-color: white;
+                width: 500px;
+                text-align: center;
+                 margin:auto;
+                
+                
             }
 
             .wrapper .newAccount {
                 color: #9f79d1;
             }
+            .tries{
+                width:  500px;
+                height: 30px;
+                background: transparent;
+                outline: none;
+                border: 2px solid rgba(255 ,255 ,255 ,0.2);
+                border-radius: 40px;
+                font-size: 16px;
+                color: white;
+                padding: 20px 45px 20px 20px;
+            }   
+            
         </style>
 
   </head>
-
-  <body>
-
-    <div class="wrapper">
-      <form method="post" action="/query">
-        <h1>Welcome to StuddiBuddi</h1>
-
-        <div class="input-box">
-<<<<<<< HEAD
-          <input type="text" placeholder="Query" name="Query" required>
-=======
-          <input type="text" placeholder="Type here to ask StuddiBuddi something" name="query" required>
->>>>>>> 7bf2266bdfeb84e20f69b62507bc5ee46f7a2109
-          <i class='bx bx-question-mark' ></i>
-        </div>  
-        
-        <div>
-            <button type="submit" class="btn">Go! <i class='bx bx-code-alt'></i></button>
-        </div>
     
-    </form>
+  <body>
+    <div class="wrapper">
+        <h1 style="color: white; "> Hints</h1><br>
+        <h3 style="text-align: cente; margin:auto">Here</h3><br>
+        <form>
+            <input type="answer" class="tries" placeholder="Write your answer here"><br><br>
+            <button type="button" class="button" style="text-align: center; margin:auto;  ">Submit</button>
+        </form>
     </div>
+  </body>
   
-
-    </body>
 </html>
