@@ -113,7 +113,7 @@
                 color: #9f79d1;
             }
             .button2{
-              width: 100px;
+              width: 465px;
               text-align: center;
               margin: auto;
             }
@@ -142,7 +142,7 @@
                     <input type="password" placeholder="Confirm Password" name="Password" id="password-field" required="">
                     <i style="padding-top: 6%;" class="bx bxs-lock-alt" id="togglePassword"></i>
                   </div><br><br>
-                  <div class="button2"><a href="StuddiBudi.html"><button type="submit" class="btn" >Create Account</button></a></div>
+                  <div class="button2" ><a href="StuddiBudi.html"><button type="submit" class="btn" >Create Account</button></a></div>
             </form>
             <script>
                 const togglePassword = document.getElementById('togglePassword');
