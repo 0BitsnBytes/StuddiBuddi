@@ -7,20 +7,20 @@
     <title>StuddiBuddi</title>
 
     <style>
-      * {
-        font-family: 'Poppins', sans-serif;
-      }
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
 
-      body {
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        background: url("https://t3.ftcdn.net/jpg/05/80/73/30/360_F_580733023_FCmat80apCiwwFKe0y2JipZODKKy7luY.jpg  ") no-repeat;
-        background-size: cover;
-        background-position: center;
-      }
+        body {
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url("https://t3.ftcdn.net/jpg/05/80/73/30/360_F_580733023_FCmat80apCiwwFKe0y2JipZODKKy7luY.jpg  ") no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
 
-      .wrapper {
+        .wrapper {
             background-color: transparent;
             border: 2px solid rgba(255, 255, 255, .3);
             backdrop-filter: blur(20px);
@@ -36,13 +36,13 @@
             transform: translate(-50%, -50%);
         }
 
-      .wrapper h1 {
+        .wrapper h1 {
             font-size: 40px;
             text-align: center;
             white-space: none;
         }
 
-      .wrapper .input-box {
+        .wrapper .input-box {
             position: relative;
             font-size: 50px;
             width: 100%;
@@ -91,7 +91,7 @@
         }
 
         .input-box input::placeholder {
-          color: rgba(235,235,235,0.75);
+            color: rgba(235,235,235,0.75);
         }
 
         .button {
@@ -116,6 +116,11 @@
         .wrapper .newAccount {
             color: #9f79d1;
         }
+
+        p {
+          color: crimson;
+        }
+
     </style>
 
   </head>
@@ -139,7 +144,9 @@
         <button type="submit" class="btn">Login<i class='bx bxs-log-in-circle' ></i></button>
         
         <a href="file:///Users/jas/Documents/GitHub/StuddiBuddi/random%20url" class="newAccount">New to StuddiBuddi? click here to create acount</a>
-    
+        
+        <p>Either Username or Password is incorrect</p>
+
     </form>
     </div>
     

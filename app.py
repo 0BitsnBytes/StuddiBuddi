@@ -1,5 +1,10 @@
 from flask import Flask, render_template, redirect, session, request
 from flask_session import Session
+from bardapi import Bard
+import requests , json
+
+Username = ["Samarth","Mudith"]
+Password = ["is","Einstien2.0"]
 
 app = Flask(__name__)
 app.secret_key = "BroLikesSchoolFood#6942"
@@ -12,13 +17,34 @@ def index():
   return redirect("/Login")
 
 @app.route("/Login")
-@app.route("/login")
 def Login():
   return render_template("login.html")
 
 @app.route("/process" , methods=["POST"])
 def process():
   Value = request.form
-  return Value
+  if Value["Username"] in Username and Value["Password"] in Password:
+    session["user"] = Value["Username"]
+    return render_template("homepage.html")
+  else:
+    return render_template("loginDen.html")
+  
+@app.route("/query", methods=["POST"])
+def Query():
+  url = "https://neutrinoapi-bad-word-filter.p.rapidapi.com/bad-word-filter"
+  payload = {
+	  "content": request.form["Query"],
+	  "censor-character": "*"}
+  headers = {
+	  "X-RapidAPI-Key": "8631403470mshd95960d1294af1ap1b37cbjsn5c0a2d143b60",
+	  "X-RapidAPI-Host": "neutrinoapi-bad-word-filter.p.rapidapi.com"}
+  response = requests.post(url, data=payload, headers=headers).json()
+  bad = response["is-bad"]
+  
+  if bad == True:
+    return render_template("homepageIsBad.html")
+  else:
+    return ((Bard(token = "fwilwx1fjOC0z04elgwEaJiQzLdSjuj2k04L3SH06M2_XZBmfLd43gdLGDIj6R21eCW0ig.")).get_answer(f'Give a hint for the answer to the question in one line {request.form["Query"]}. Do not give the answer.'))["content"] 
+
 
 app.run(debug=True)
