@@ -2,7 +2,6 @@
 <html>
     <head>
         <title>New Account|StuddiBuddi</title>
-        <link rel="stylesheet" href="front2.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
         >
@@ -124,7 +123,7 @@
     </head>
     <body>
         <div class="wrapper">
-            <form method="post" action="login.html">
+            <form method="put" action="login.html">
               <h1>Welcome to StuddiBuddi!</h1>
               <h2>Let us help you create your new account...</h2>
         <div class="container">
