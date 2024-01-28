@@ -124,12 +124,11 @@
     </head>
     <body>
         <div class="wrapper">
-            <form method="post" action="front2.html">
+            <form method="post" action="login.html">
               <h1>Welcome to StuddiBuddi!</h1>
               <h2>Let us help you create your new account...</h2>
         <div class="container">
             <h2>Create New Account</h2>
-            <form action="submit_new_account.php" method="POST">
                 <div class="input-box">
                     <input type="text" placeholder="Username" name="Username" required="">
                     <div style="padding-top: 5px;"><i style="padding-top: 6%;" class="bx bxs-user"></i> </div>
@@ -142,7 +141,7 @@
                     <input type="password" placeholder="Confirm Password" name="Password" id="password-field" required="">
                     <i style="padding-top: 6%;" class="bx bxs-lock-alt" id="togglePassword"></i>
                   </div><br><br>
-                  <div class="button2" ><a href="StuddiBudi.html"><button type="submit" class="btn" >Create Account</button></a></div>
+                  <div class="button2" ><a href="login.html"><button type="submit" class="btn" >Create Account</button></a></div>
             </form>
             <script>
                 const togglePassword = document.getElementById('togglePassword');
