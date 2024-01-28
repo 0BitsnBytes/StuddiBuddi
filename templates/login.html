@@ -6,7 +6,6 @@
 <!-- saved from url=(0058)file:///Users/jas/Documents/GitHub/StuddiBuddi/front1.html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="login.css" rel="stylesheet" type="text/css">
     <title>StuddiBuddi</title>
 
     <style>
@@ -62,7 +61,7 @@
             border-radius: 40px;
             font-size: 16px;
             color: white;
-            padding: 20px 45px 20px 20px;
+            padding: 5px 20px 5px 20px;
         }
 
         .input-box input::placeholder {
@@ -79,7 +78,7 @@
         }
 
         .wrapper .btn {
-            width: 75%;
+            width: 100%;
             height: 45px;
             background: white;
             border: 2px solid rgba(255 ,255 ,255 ,0.2);
@@ -93,8 +92,35 @@
             margin-bottom: 30px;
         }
 
+        .button {
+            position: fixed;
+            top: 50px;
+            right: 45px;
+            width: 200px;
+            height: 45px;
+            background: transparent;
+            backdrop-filter: blur(5px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            outline: none;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            font-size: 20px;
+            color: white;
+            font-weight: 600;
+            align-items: center;
+        }
+
         .wrapper .newAccount {
             color: #9f79d1;
+        }
+        .button2{
+          width: 100px;
+          text-align: center;
+          margin: auto;
+        }
+        .iconU{
+          position:relative;
         }
     </style>
 
@@ -103,22 +129,22 @@
   <body>
 
     <div class="wrapper">
-      <form method="post" action="/LoginProcess">
-        <h1>Login to StuddiBuddi</h1>
+      <form method="post" action="front2.html">
+        <h1>Welcome to StuddiBuddi</h1>
 
         <div class="input-box">
           <input type="text" placeholder="Username" name="Username" required="">
-          <i class="bx bxs-user"></i>
-        </div>
+    <div style="padding-top: 5px;"><i style="padding-top: 6%;" class="bx bxs-user"></i> </div>
+        </div><br>
 
         <div class="input-box">
           <input type="password" placeholder="Password" name="Password" id="password-field" required="">
-          <i class="bx bxs-lock-alt" id="togglePassword"></i>
-        </div>
+          <i style="padding-top: 6%;" class="bx bxs-lock-alt" id="togglePassword"></i>
+        </div><br><br>
 
-        <button type="submit" class="btn">Login<i class='bx bxs-log-in-circle' ></i></button>
-        <p></p>
-        <a href="file:///Users/jas/Documents/GitHub/StuddiBuddi/random%20url" class="newAccount">New to StuddiBuddi? click here to create acount</a>
+        <div class="button2"><a href="front2.html"><button type="submit" class="btn"  >Login</button></a></div>
+        
+        <a href="NewAccount.html" class="newAccount">New to StuddiBuddi? click here to create acount</a>
     
     </form>
     </div>
