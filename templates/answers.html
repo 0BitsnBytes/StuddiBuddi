@@ -1,25 +1,26 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <title>New Account|StuddiBuddi</title>
-        <link rel="stylesheet" href="front2.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title>StuddiBuddi</title>
 
-        >
         <style>
             * {
                 font-family: 'Poppins', sans-serif;
             }
-    
+
             body {
                 justify-content: center;
                 align-items: center;
                 min-height: 100vh;
-                background: url("https://images.unsplash.com/photo-1592666452220-529326e2588e?q=80&w=1804&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat;
+                background: url("https://i.pinimg.com/736x/e1/71/1f/e1711fc6512f39eef8fb1b13178512b6.jpg") no-repeat;
+                background-size: cover;
                 background-size: cover;
                 background-position: center;
+                color: white; 
+                text-align:center
             }
-    
+
             .wrapper {
                 background-color: transparent;
                 border: 2px solid rgba(255, 255, 255, .3);
@@ -34,14 +35,15 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+                padding-right:150px
             }
-    
+
             .wrapper h1 {
                 font-size: 40px;
                 text-align: center;
                 white-space: none;
             }
-    
+
             .wrapper .input-box {
                 position: relative;
                 font-size: 50px;
@@ -49,7 +51,7 @@
                 height: 50px;
                 margin: 30px 0;
             }
-    
+
             .input-box input {
                 width: 100%;
                 height: 100%;
@@ -59,13 +61,13 @@
                 border-radius: 40px;
                 font-size: 16px;
                 color: white;
-                padding: 5px 20px 5px 20px;
+                padding: 20px 45px 20px 20px;
             }
-    
+
             .input-box input::placeholder {
                 color: rgba(235,235,235);
             }
-    
+
             .input-box i {
                 position: absolute;
                 right: 20px;
@@ -74,7 +76,7 @@
                 transform: translateY(-50%);
                 font-size: 20px;
             }
-    
+
             .wrapper .btn {
                 width: 100%;
                 height: 45px;
@@ -89,13 +91,8 @@
                 font-weight: 600;
                 margin-bottom: 30px;
             }
-    
+
             .button {
-                position: fixed;
-                top: 50px;
-                right: 45px;
-                width: 200px;
-                height: 45px;
                 background: transparent;
                 backdrop-filter: blur(5px);
                 border: 2px solid rgba(255, 255, 255, 0.2);
@@ -104,60 +101,45 @@
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
                 cursor: pointer;
                 font-size: 20px;
-                color: white;
+                color: black;
                 font-weight: 600;
                 align-items: center;
+                background-color: white;
+                width: 500px;
+                text-align: center;
+                 margin:auto;
+                
+                
             }
-    
+
             .wrapper .newAccount {
                 color: #9f79d1;
             }
-            .button2{
-              width: 465px;
-              text-align: center;
-              margin: auto;
-            }
-            .iconU{
-              position:relative;
-            }
+            .tries{
+                width:  500px;
+                height: 30px;
+                background: transparent;
+                outline: none;
+                border: 2px solid rgba(255 ,255 ,255 ,0.2);
+                border-radius: 40px;
+                font-size: 16px;
+                color: white;
+                padding: 20px 45px 20px 20px;
+            }   
+            
         </style>
-    </head>
-    <body>
-        <div class="wrapper">
-            <form method="post" action="login.html">
-              <h1>Welcome to StuddiBuddi!</h1>
-              <h2>Let us help you create your new account...</h2>
-        <div class="container">
-            <h2>Create New Account</h2>
-                <div class="input-box">
-                    <input type="text" placeholder="Username" name="Username" required="">
-                    <div style="padding-top: 5px;"><i style="padding-top: 6%;" class="bx bxs-user"></i> </div>
-                    </div>
-                <div class="input-box">
-                    <input type="password" placeholder="Password" name="Password" id="password-field" required="">
-                    <i style="padding-top: 6%;" class="bx bxs-lock-alt" id="togglePassword"></i>
-                  </div>
-                <div class="input-box">
-                    <input type="password" placeholder="Confirm Password" name="Password" id="password-field" required="">
-                    <i style="padding-top: 6%;" class="bx bxs-lock-alt" id="togglePassword"></i>
-                  </div><br><br>
-                  <div class="button2" ><a href="login.html"><button type="submit" class="btn" >Create Account</button></a></div>
-            </form>
-            <script>
-                const togglePassword = document.getElementById('togglePassword');
-                togglePassword.addEventListener('click', function(e) {
-                  // toggle the type attribute of the input field
-                  const passwordField = document.getElementById('password-field');
-                  if (passwordField.type === "password") {
-                    passwordField.type = "text";
-                  } else {
-                    passwordField.type = "password";
-                  }
-                  // toggle the eye icon
-                  this.classList.toggle('bx-hide');
-                });
-              </script>
-          
-        </div>
-    </body>
+
+  </head>
+    
+  <body>
+    <div class="wrapper">
+        <h1 style="color: white; "> Hints</h1><br>
+        <h3 style="text-align: cente; margin:auto">{{ Var }}</h3>
+        <form action="/proc" method="post">
+            <input type="hidden" value="{{ aer }}" name="Val">
+            <button type="submit" class="btn">Sneak Peak</button>
+        </form>
+    </div>
+  </body>
+  
 </html>
